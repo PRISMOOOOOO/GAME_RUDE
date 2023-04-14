@@ -27,7 +27,6 @@ def show_img(x,y):
     IMG = pygame.transform.scale(pygame.image.load(file),(100,100))
     SCREEN.blit(IMG,(x,y))
 
-
 def YES():
     global run
     run = True
@@ -64,8 +63,6 @@ def Button2(x,y,w,h,color1,color2,activate=None):
             activate()
     else:
         pygame.draw.rect(SCREEN,color2,(x,y,w,h))
-
-
 
 run = False  
 while not run:
